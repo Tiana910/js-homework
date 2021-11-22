@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let value1 = 10;
+        let value2 = '10';
+        let value3 = 10;
+        let value4 = '2,5';
+        let value5 = -"";
+
+        let result1 = (value1 + value3) + value2; //10 плюс 10 конкотенируем со стокой "10"
+        console.log(result1); // с помоью console.log выводим результат в консоль 2010
+
+        let result2 = value1 + value2 + value3; //10 конкотенируем со стокой "10" и прибавляя число 10 получается кокотенация в строку
+        console.log(result2); //  с помоью console.log выводим результат в консоль 101010
+
+        let result3 = value1 + value3 + +value2; // 10 прибовляем 10 и прибавляем унарный плюс (превращает строку в число) 
+        console.log(result3); //  с помоью console.log выводим результат в консоль 30
+
+        let result4 = value1 / value5; // 10 делим на отрицательный унарный минус (-0)
+        console.log(result4); //с помоью console.log выводим результат в консоль  минус бесконечность
+
+        let result5 = value1 / value4; //10 делим на унарный плюс (но т.к. там число нецелое программа выдает NaN)
+        console.log(result5); //с помоью console.log выводим результат в консоль NaN (т.к. при математическом действии на NaN получаем NaN  )
+
+
+    </script>
+</body>
+
+</html>
