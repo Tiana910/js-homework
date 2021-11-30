@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        let a = prompt("Введите первое целое произвольное число");
+        let b = prompt("Введите второе целое произвольное число");
+
+        if (a >= 0 && b >= 0) {
+            let result = a - b;
+            alert("Разность чисел равна " + result);
+        } else if (a <= 0 && b <= 0) {
+            let result = a * b;
+            alert("Произведение чисел равно " + result);
+        } else if ((a > 0 && b < 0) || (a < 0 && b > 0)) {
+            let result = a + b;
+            alert("Сумма чисел равна " + result);
+        } else {
+            alert("Вы ввели не число");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
